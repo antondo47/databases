@@ -60,7 +60,7 @@ internal class Program
                             }
                         }
 
-                        Console.Write("\nEnter the Employee ID you want to update: ");
+                        Console.Write("\nEnter the Employee ID to be updated: ");
                         int updateId = int.Parse(Console.ReadLine()!);
 
                         Console.Write("Enter new Employee Code (int): ");
@@ -92,7 +92,7 @@ internal class Program
 
                     case 3: // DELETE
                         int e_id;
-                            Console.Write("Enter the Employee ID of the entry to be removed: ");
+                            Console.Write("Enter the Employee ID to be removed: ");
                             e_id = int.Parse(Console.ReadLine());
                             String deleteQuery = "DELETE FROM employee_info WHERE employee_id = " + e_id + "";
                             SqlCommand deleteCommand = new SqlCommand(deleteQuery, conn);
